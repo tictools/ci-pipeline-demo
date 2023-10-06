@@ -60,8 +60,6 @@ You can create a branch protection rule to enforce certain workflows for one or 
 
 You can create a branch protection rule in a repository for a specific branch, all branches, or any branch that matches a name pattern you specify with fnmatch syntax. For example, to protect any branches containing the word release, you can create a branch rule for _release_.
 
-This is a test
-
 ## lint-staged
 
 `lint-staged` runs linters against staged git files. Linting makes more sense when run before committing your code. By doing so you can ensure no errors go into the repository and enforce code style.
