@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "## Code formatters",
   "main": "index.js",
+  "scripts": {
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "prepare": "husky install",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
   "devDependencies": {
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
@@ -14,12 +21,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
-    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
