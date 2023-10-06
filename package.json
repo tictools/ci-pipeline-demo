@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/tictools/ci-pipeline-demo#readme",
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.js": "eslint --fix",
     "*.{js,css,md}": "prettier --write"
   }
 }
