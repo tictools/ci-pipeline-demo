@@ -1,4 +1,4 @@
-const concatenate = (word1, word2) => {
+export const concatenate = (word1, word2) => {
   return `Contenating... ${word1} ${word2}`;
 };
 
