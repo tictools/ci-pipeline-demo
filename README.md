@@ -56,7 +56,7 @@ It’s easy to work with both together, by using `eslint-config-prettier`, a pre
 
 ## Branch protection rules
 
-xxx
+You can create a branch protection rule to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
 
 ## lint-staged
 
@@ -97,3 +97,4 @@ This will:
 - eslint-config-prettier: https://github.com/prettier/eslint-config-prettier
 - lint-staged: https://github.com/okonet/lint-staged
 - Husky: https://github.com/typicode/husky
+- branch protection rule: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule
