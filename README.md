@@ -9,13 +9,21 @@ Prettier is an opinionated code formatter. It supports many languages and integr
 Install
 
 ```bash
+### npm
 npm install --save-dev --save-exact prettier
+
+### bun
+bun install --save-dev --save-exact prettier
 ```
 
 Format files
 
 ```bash
+### npm
 npx prettier . --write
+
+### bun
+bunx prettier . --write
 ```
 
 #### Editor setup
@@ -33,7 +41,11 @@ ESLint is a tool for identifying and reporting on patterns found in ECMAScript/J
 You can install and configure ESLint using this command:
 
 ```bash
+### npm
 npm init @eslint/config
+
+### bun
+bun init @eslint/config
 ```
 
 ### Integrating Prettier & ESLint
@@ -69,6 +81,12 @@ npx mrm@2 lint-staged
 ### bun
 bunx mrm@2 lint-staged
 ```
+
+This will:
+
+- install husky and lint-staged,
+- add `lint-staged` configuration to the project’s `package.json` that will automatically format supported files in a pre-commit hook.
+- add `.husky` folder with `pre-commit` hook.
 
 ## GitHub actions
 
