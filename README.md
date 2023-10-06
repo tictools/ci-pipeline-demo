@@ -46,9 +46,29 @@ It’s easy to work with both together, by using `eslint-config-prettier`, a pre
 
 xxx
 
-## lintstaged
+## lint-staged
 
-## huskey
+`lint-staged` runs linters against staged git files. Linting makes more sense when run before committing your code. By doing so you can ensure no errors go into the repository and enforce code style.
+
+But running a lint process on a whole project is slow, and linting results can be irrelevant. Ultimately you only want to lint files that will be committed.
+
+## Husky
+
+Husky improves your commits and more 🐶 woof!
+
+You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports all client-side Git hooks.
+
+## Integrating lint-staged and Husky
+
+Install
+
+```bash
+### npm
+npx mrm@2 lint-staged
+
+### bun
+bunx mrm@2 lint-staged
+```
 
 ## GitHub actions
 
@@ -57,3 +77,5 @@ xxx
 - Prettier: https://prettier.io/
 - prettier-vscode: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 - eslint-config-prettier: https://github.com/prettier/eslint-config-prettier
+- lint-staged: https://github.com/okonet/lint-staged
+- Husky: https://github.com/typicode/husky
