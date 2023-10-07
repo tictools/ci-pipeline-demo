@@ -1,0 +1,24 @@
+name: say-hello
+run-name: ${{github.actor}} just learning GH Actions
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "1"
+      - name: Run index
+        run: bun run index.mjs
+      - name: Success message
+        run: echo 🚀 My fisrt GH Action!!!
