@@ -1,0 +1,13 @@
+name: say-hello
+run-name: ${{github.actor}} jsut learning GH Actions
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu@18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - run: node index.mjs
+      - run: echo 🚀 My fisrt GH Action!!!
