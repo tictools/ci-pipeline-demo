@@ -1,5 +1,5 @@
 name: say-hello
-run-name: ${{github.actor}} jsut learning GH Actions
+run-name: ${{github.actor}} just learning GH Actions
 on: [push]
 jobs:
   say-hello:
