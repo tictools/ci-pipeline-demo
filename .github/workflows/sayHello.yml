@@ -3,7 +3,7 @@ run-name: ${{github.actor}} jsut learning GH Actions
 on: [push]
 jobs:
   say-hello:
-    runs-on: ubuntu@18
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v1
