@@ -9,5 +9,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: "1"
-      - run: bun run index.mjs
-      - run: echo 🚀 My fisrt GH Action!!!
+      - name: Run index
+        run: bun run index.mjs
+      - name: Log success message
+        run: echo 🚀 My fisrt GH Action!!!
